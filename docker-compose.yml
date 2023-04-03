@@ -6,7 +6,7 @@ services:
   mongo-2:
     container_name: mongo-2
     image: mongo
-    entrypoint: [ "/usr/bin/mongod", "--keyFile", "/data/mongo.key", "--replSet", "navaidBlogs", "--journal", "--bind_ip_all" ]
+    entrypoint: [ "/usr/bin/mongod", "--keyFile", "/data/mongo.key", "--replSet", "NavaidBlog", "--journal", "--bind_ip_all" ]
     ports:
     - "30002:27017"
     restart: always
@@ -18,7 +18,7 @@ services:
   mongo-1:
     container_name: mongo-1
     image: mongo
-    entrypoint: [ "/usr/bin/mongod", "--keyFile", "/data/mongo.key", "--replSet", "navaidBlogs", "--journal", "--bind_ip_all" ]
+    entrypoint: [ "/usr/bin/mongod", "--keyFile", "/data/mongo.key", "--replSet", "NavaidBlog", "--journal", "--bind_ip_all" ]
     ports:
     - "30001:27017"
     restart: always
@@ -30,7 +30,7 @@ services:
   mongo-0:
     container_name: mongo-0
     image: mongo
-    entrypoint: [ "/usr/bin/mongod", "--keyFile", "/data/mongo.key", "--replSet", "navaidBlogs", "--journal", "--bind_ip_all" ]
+    entrypoint: [ "/usr/bin/mongod", "--keyFile", "/data/mongo.key", "--replSet", "NavaidBlog", "--journal", "--bind_ip_all" ]
     ports:
     - "30000:27017"
     restart: always
