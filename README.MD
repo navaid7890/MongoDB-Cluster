@@ -56,7 +56,7 @@ For example, the following script initializes the replica set with the name **Na
 
 mongo <<EOF
    var cfg = {
-        "_id": "xelerate",
+        "_id": "NavaidBlog",
         "version": 1,
         "members": [
             {
