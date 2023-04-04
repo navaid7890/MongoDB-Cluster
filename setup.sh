@@ -1,8 +1,8 @@
 #!/bin/bash
 
-mongo <<EOF
+mongosh <<EOF
    var cfg = {
-        "_id": "xelerate",
+        "_id": "NavaidBlog",
         "version": 1,
         "members": [
             {
@@ -28,7 +28,7 @@ mongo <<EOF
 EOF
 sleep 10
 
-mongo <<EOF
+mongosh <<EOF
    use admin;
    admin = db.getSiblingDB("admin");
    admin.createUser(
